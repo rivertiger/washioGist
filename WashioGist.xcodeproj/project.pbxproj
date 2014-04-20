@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E17526B190486D00082A1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526A190486D00082A1B3 /* Foundation.framework */; };
+		7E17526D190486D00082A1B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526C190486D00082A1B3 /* CoreGraphics.framework */; };
+		7E17526F190486D00082A1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526E190486D00082A1B3 /* UIKit.framework */; };
+		7E175275190486D00082A1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E175273190486D00082A1B3 /* InfoPlist.strings */; };
+		7E175277190486D00082A1B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175276190486D00082A1B3 /* main.m */; };
+		7E17527B190486D00082A1B3 /* JNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E17527A190486D00082A1B3 /* JNAppDelegate.m */; };
+		7E17527E190486D00082A1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E17527C190486D00082A1B3 /* Main.storyboard */; };
+		7E175281190486D00082A1B3 /* JNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175280190486D00082A1B3 /* JNViewController.m */; };
+		7E175283190486D00082A1B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E175282190486D00082A1B3 /* Images.xcassets */; };
+		7E17528A190486D00082A1B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E175289190486D00082A1B3 /* XCTest.framework */; };
+		7E17528B190486D00082A1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526A190486D00082A1B3 /* Foundation.framework */; };
+		7E17528C190486D00082A1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526E190486D00082A1B3 /* UIKit.framework */; };
+		7E175294190486D00082A1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E175292190486D00082A1B3 /* InfoPlist.strings */; };
+		7E175296190486D00082A1B3 /* WashioGistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175295190486D00082A1B3 /* WashioGistTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E17528D190486D00082A1B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E17525F190486D00082A1B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E175266190486D00082A1B3;
+			remoteInfo = WashioGist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E175267190486D00082A1B3 /* WashioGist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WashioGist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E17526A190486D00082A1B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E17526C190486D00082A1B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E17526E190486D00082A1B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E175272190486D00082A1B3 /* WashioGist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WashioGist-Info.plist"; sourceTree = "<group>"; };
+		7E175274190486D00082A1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E175276190486D00082A1B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E175278190486D00082A1B3 /* WashioGist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WashioGist-Prefix.pch"; sourceTree = "<group>"; };
+		7E175279190486D00082A1B3 /* JNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNAppDelegate.h; sourceTree = "<group>"; };
+		7E17527A190486D00082A1B3 /* JNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNAppDelegate.m; sourceTree = "<group>"; };
+		7E17527D190486D00082A1B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E17527F190486D00082A1B3 /* JNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNViewController.h; sourceTree = "<group>"; };
+		7E175280190486D00082A1B3 /* JNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNViewController.m; sourceTree = "<group>"; };
+		7E175282190486D00082A1B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7E175288190486D00082A1B3 /* WashioGistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WashioGistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E175289190486D00082A1B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E175291190486D00082A1B3 /* WashioGistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WashioGistTests-Info.plist"; sourceTree = "<group>"; };
+		7E175293190486D00082A1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E175295190486D00082A1B3 /* WashioGistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WashioGistTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E175264190486D00082A1B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E17526D190486D00082A1B3 /* CoreGraphics.framework in Frameworks */,
+				7E17526F190486D00082A1B3 /* UIKit.framework in Frameworks */,
+				7E17526B190486D00082A1B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E175285190486D00082A1B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E17528A190486D00082A1B3 /* XCTest.framework in Frameworks */,
+				7E17528C190486D00082A1B3 /* UIKit.framework in Frameworks */,
+				7E17528B190486D00082A1B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E17525E190486D00082A1B3 = {
+			isa = PBXGroup;
+			children = (
+				7E175270190486D00082A1B3 /* WashioGist */,
+				7E17528F190486D00082A1B3 /* WashioGistTests */,
+				7E175269190486D00082A1B3 /* Frameworks */,
+				7E175268190486D00082A1B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E175268190486D00082A1B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E175267190486D00082A1B3 /* WashioGist.app */,
+				7E175288190486D00082A1B3 /* WashioGistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E175269190486D00082A1B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E17526A190486D00082A1B3 /* Foundation.framework */,
+				7E17526C190486D00082A1B3 /* CoreGraphics.framework */,
+				7E17526E190486D00082A1B3 /* UIKit.framework */,
+				7E175289190486D00082A1B3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E175270190486D00082A1B3 /* WashioGist */ = {
+			isa = PBXGroup;
+			children = (
+				7E175279190486D00082A1B3 /* JNAppDelegate.h */,
+				7E17527A190486D00082A1B3 /* JNAppDelegate.m */,
+				7E17527C190486D00082A1B3 /* Main.storyboard */,
+				7E17527F190486D00082A1B3 /* JNViewController.h */,
+				7E175280190486D00082A1B3 /* JNViewController.m */,
+				7E175282190486D00082A1B3 /* Images.xcassets */,
+				7E175271190486D00082A1B3 /* Supporting Files */,
+			);
+			path = WashioGist;
+			sourceTree = "<group>";
+		};
+		7E175271190486D00082A1B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E175272190486D00082A1B3 /* WashioGist-Info.plist */,
+				7E175273190486D00082A1B3 /* InfoPlist.strings */,
+				7E175276190486D00082A1B3 /* main.m */,
+				7E175278190486D00082A1B3 /* WashioGist-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E17528F190486D00082A1B3 /* WashioGistTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E175295190486D00082A1B3 /* WashioGistTests.m */,
+				7E175290190486D00082A1B3 /* Supporting Files */,
+			);
+			path = WashioGistTests;
+			sourceTree = "<group>";
+		};
+		7E175290190486D00082A1B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E175291190486D00082A1B3 /* WashioGistTests-Info.plist */,
+				7E175292190486D00082A1B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E175266190486D00082A1B3 /* WashioGist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E175299190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGist" */;
+			buildPhases = (
+				7E175263190486D00082A1B3 /* Sources */,
+				7E175264190486D00082A1B3 /* Frameworks */,
+				7E175265190486D00082A1B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WashioGist;
+			productName = WashioGist;
+			productReference = 7E175267190486D00082A1B3 /* WashioGist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E175287190486D00082A1B3 /* WashioGistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E17529C190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGistTests" */;
+			buildPhases = (
+				7E175284190486D00082A1B3 /* Sources */,
+				7E175285190486D00082A1B3 /* Frameworks */,
+				7E175286190486D00082A1B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E17528E190486D00082A1B3 /* PBXTargetDependency */,
+			);
+			name = WashioGistTests;
+			productName = WashioGistTests;
+			productReference = 7E175288190486D00082A1B3 /* WashioGistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E17525F190486D00082A1B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Washio;
+				TargetAttributes = {
+					7E175287190486D00082A1B3 = {
+						TestTargetID = 7E175266190486D00082A1B3;
+					};
+				};
+			};
+			buildConfigurationList = 7E175262190486D00082A1B3 /* Build configuration list for PBXProject "WashioGist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E17525E190486D00082A1B3;
+			productRefGroup = 7E175268190486D00082A1B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E175266190486D00082A1B3 /* WashioGist */,
+				7E175287190486D00082A1B3 /* WashioGistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E175265190486D00082A1B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E175283190486D00082A1B3 /* Images.xcassets in Resources */,
+				7E175275190486D00082A1B3 /* InfoPlist.strings in Resources */,
+				7E17527E190486D00082A1B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E175286190486D00082A1B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E175294190486D00082A1B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E175263190486D00082A1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E17527B190486D00082A1B3 /* JNAppDelegate.m in Sources */,
+				7E175281190486D00082A1B3 /* JNViewController.m in Sources */,
+				7E175277190486D00082A1B3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E175284190486D00082A1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E175296190486D00082A1B3 /* WashioGistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E17528E190486D00082A1B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E175266190486D00082A1B3 /* WashioGist */;
+			targetProxy = 7E17528D190486D00082A1B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E175273190486D00082A1B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E175274190486D00082A1B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E17527C190486D00082A1B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E17527D190486D00082A1B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E175292190486D00082A1B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E175293190486D00082A1B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E175297190486D00082A1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E175298190486D00082A1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E17529A190486D00082A1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WashioGist/WashioGist-Prefix.pch";
+				INFOPLIST_FILE = "WashioGist/WashioGist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E17529B190486D00082A1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WashioGist/WashioGist-Prefix.pch";
+				INFOPLIST_FILE = "WashioGist/WashioGist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7E17529D190486D00082A1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WashioGist.app/WashioGist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WashioGist/WashioGist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WashioGistTests/WashioGistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7E17529E190486D00082A1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WashioGist.app/WashioGist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WashioGist/WashioGist-Prefix.pch";
+				INFOPLIST_FILE = "WashioGistTests/WashioGistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E175262190486D00082A1B3 /* Build configuration list for PBXProject "WashioGist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E175297190486D00082A1B3 /* Debug */,
+				7E175298190486D00082A1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E175299190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E17529A190486D00082A1B3 /* Debug */,
+				7E17529B190486D00082A1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E17529C190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E17529D190486D00082A1B3 /* Debug */,
+				7E17529E190486D00082A1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E17525F190486D00082A1B3 /* Project object */;
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D92AC563354C209B5E436A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9B62390B0E43579C305708 /* libPods.a */; };
 		7E17526B190486D00082A1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526A190486D00082A1B3 /* Foundation.framework */; };
 		7E17526D190486D00082A1B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526C190486D00082A1B3 /* CoreGraphics.framework */; };
 		7E17526F190486D00082A1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526E190486D00082A1B3 /* UIKit.framework */; };
@@ -14,13 +15,27 @@
 		7E175277190486D00082A1B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175276190486D00082A1B3 /* main.m */; };
 		7E17527B190486D00082A1B3 /* JNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E17527A190486D00082A1B3 /* JNAppDelegate.m */; };
 		7E17527E190486D00082A1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E17527C190486D00082A1B3 /* Main.storyboard */; };
-		7E175281190486D00082A1B3 /* JNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175280190486D00082A1B3 /* JNViewController.m */; };
 		7E175283190486D00082A1B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E175282190486D00082A1B3 /* Images.xcassets */; };
 		7E17528A190486D00082A1B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E175289190486D00082A1B3 /* XCTest.framework */; };
 		7E17528B190486D00082A1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526A190486D00082A1B3 /* Foundation.framework */; };
 		7E17528C190486D00082A1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E17526E190486D00082A1B3 /* UIKit.framework */; };
 		7E175294190486D00082A1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E175292190486D00082A1B3 /* InfoPlist.strings */; };
 		7E175296190486D00082A1B3 /* WashioGistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E175295190486D00082A1B3 /* WashioGistTests.m */; };
+		7E7617FF19049C990051E6A1 /* login-button-small-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7617FB19049C990051E6A1 /* login-button-small-pressed.png */; };
+		7E76180019049C990051E6A1 /* login-button-small-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7617FC19049C990051E6A1 /* login-button-small-pressed@2x.png */; };
+		7E76180119049C990051E6A1 /* login-button-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7617FD19049C990051E6A1 /* login-button-small.png */; };
+		7E76180219049C990051E6A1 /* login-button-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7617FE19049C990051E6A1 /* login-button-small@2x.png */; };
+		7E76181C1904B0200051E6A1 /* JNAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E76181B1904B0200051E6A1 /* JNAppManager.m */; };
+		7E7618211904B0370051E6A1 /* JNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7618201904B0370051E6A1 /* JNBaseViewController.m */; };
+		7E76182A1904C7DF0051E6A1 /* portrait_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7618291904C7DF0051E6A1 /* portrait_placeholder.png */; };
+		7E7618371904D0CD0051E6A1 /* JNEachRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E76182C1904D0CD0051E6A1 /* JNEachRoundViewController.m */; };
+		7E7618381904D0CD0051E6A1 /* JNEachRoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E76182D1904D0CD0051E6A1 /* JNEachRoundViewController.xib */; };
+		7E7618391904D0CD0051E6A1 /* JNLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E76182F1904D0CD0051E6A1 /* JNLoginViewController.m */; };
+		7E76183A1904D0CD0051E6A1 /* JNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7618301904D0CD0051E6A1 /* JNLoginViewController.xib */; };
+		7E76183B1904D0CD0051E6A1 /* JNMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7618321904D0CD0051E6A1 /* JNMainMenuViewController.m */; };
+		7E76183C1904D0CD0051E6A1 /* JNMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7618331904D0CD0051E6A1 /* JNMainMenuViewController.xib */; };
+		7E7618421904D17C0051E6A1 /* JNSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7618401904D17C0051E6A1 /* JNSummaryViewController.m */; };
+		7E7618431904D17C0051E6A1 /* JNSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7618411904D17C0051E6A1 /* JNSummaryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28C4DDDBB86A4462AD23F6FF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		7E175267190486D00082A1B3 /* WashioGist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WashioGist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E17526A190486D00082A1B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E17526C190486D00082A1B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +61,34 @@
 		7E175279190486D00082A1B3 /* JNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNAppDelegate.h; sourceTree = "<group>"; };
 		7E17527A190486D00082A1B3 /* JNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNAppDelegate.m; sourceTree = "<group>"; };
 		7E17527D190486D00082A1B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E17527F190486D00082A1B3 /* JNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNViewController.h; sourceTree = "<group>"; };
-		7E175280190486D00082A1B3 /* JNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNViewController.m; sourceTree = "<group>"; };
 		7E175282190486D00082A1B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7E175288190486D00082A1B3 /* WashioGistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WashioGistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E175289190486D00082A1B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7E175291190486D00082A1B3 /* WashioGistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WashioGistTests-Info.plist"; sourceTree = "<group>"; };
 		7E175293190486D00082A1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E175295190486D00082A1B3 /* WashioGistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WashioGistTests.m; sourceTree = "<group>"; };
+		7E7617FB19049C990051E6A1 /* login-button-small-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small-pressed.png"; sourceTree = "<group>"; };
+		7E7617FC19049C990051E6A1 /* login-button-small-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small-pressed@2x.png"; sourceTree = "<group>"; };
+		7E7617FD19049C990051E6A1 /* login-button-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small.png"; sourceTree = "<group>"; };
+		7E7617FE19049C990051E6A1 /* login-button-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small@2x.png"; sourceTree = "<group>"; };
+		7E76181A1904B0200051E6A1 /* JNAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNAppManager.h; sourceTree = "<group>"; };
+		7E76181B1904B0200051E6A1 /* JNAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNAppManager.m; sourceTree = "<group>"; };
+		7E76181F1904B0370051E6A1 /* JNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNBaseViewController.h; sourceTree = "<group>"; };
+		7E7618201904B0370051E6A1 /* JNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNBaseViewController.m; sourceTree = "<group>"; };
+		7E7618291904C7DF0051E6A1 /* portrait_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait_placeholder.png; sourceTree = "<group>"; };
+		7E76182B1904D0CD0051E6A1 /* JNEachRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNEachRoundViewController.h; sourceTree = "<group>"; };
+		7E76182C1904D0CD0051E6A1 /* JNEachRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNEachRoundViewController.m; sourceTree = "<group>"; };
+		7E76182D1904D0CD0051E6A1 /* JNEachRoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JNEachRoundViewController.xib; sourceTree = "<group>"; };
+		7E76182E1904D0CD0051E6A1 /* JNLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNLoginViewController.h; sourceTree = "<group>"; };
+		7E76182F1904D0CD0051E6A1 /* JNLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNLoginViewController.m; sourceTree = "<group>"; };
+		7E7618301904D0CD0051E6A1 /* JNLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JNLoginViewController.xib; sourceTree = "<group>"; };
+		7E7618311904D0CD0051E6A1 /* JNMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNMainMenuViewController.h; sourceTree = "<group>"; };
+		7E7618321904D0CD0051E6A1 /* JNMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNMainMenuViewController.m; sourceTree = "<group>"; };
+		7E7618331904D0CD0051E6A1 /* JNMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JNMainMenuViewController.xib; sourceTree = "<group>"; };
+		7E76183F1904D17C0051E6A1 /* JNSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNSummaryViewController.h; sourceTree = "<group>"; };
+		7E7618401904D17C0051E6A1 /* JNSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNSummaryViewController.m; sourceTree = "<group>"; };
+		7E7618411904D17C0051E6A1 /* JNSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JNSummaryViewController.xib; sourceTree = "<group>"; };
+		DE9B62390B0E43579C305708 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +99,7 @@
 				7E17526D190486D00082A1B3 /* CoreGraphics.framework in Frameworks */,
 				7E17526F190486D00082A1B3 /* UIKit.framework in Frameworks */,
 				7E17526B190486D00082A1B3 /* Foundation.framework in Frameworks */,
+				18D92AC563354C209B5E436A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +123,7 @@
 				7E17528F190486D00082A1B3 /* WashioGistTests */,
 				7E175269190486D00082A1B3 /* Frameworks */,
 				7E175268190486D00082A1B3 /* Products */,
+				28C4DDDBB86A4462AD23F6FF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +143,7 @@
 				7E17526C190486D00082A1B3 /* CoreGraphics.framework */,
 				7E17526E190486D00082A1B3 /* UIKit.framework */,
 				7E175289190486D00082A1B3 /* XCTest.framework */,
+				DE9B62390B0E43579C305708 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +151,11 @@
 		7E175270190486D00082A1B3 /* WashioGist */ = {
 			isa = PBXGroup;
 			children = (
+				7E7617FA19049C990051E6A1 /* assets */,
+				7E7617EF19049C1B0051E6A1 /* source */,
 				7E175279190486D00082A1B3 /* JNAppDelegate.h */,
 				7E17527A190486D00082A1B3 /* JNAppDelegate.m */,
 				7E17527C190486D00082A1B3 /* Main.storyboard */,
-				7E17527F190486D00082A1B3 /* JNViewController.h */,
-				7E175280190486D00082A1B3 /* JNViewController.m */,
 				7E175282190486D00082A1B3 /* Images.xcassets */,
 				7E175271190486D00082A1B3 /* Supporting Files */,
 			);
@@ -152,6 +191,65 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7E7617EF19049C1B0051E6A1 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7E76181D1904B0370051E6A1 /* viewcontrollers */,
+				7E7618191904B0080051E6A1 /* model */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		7E7617FA19049C990051E6A1 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				7E7618291904C7DF0051E6A1 /* portrait_placeholder.png */,
+				7E7617FB19049C990051E6A1 /* login-button-small-pressed.png */,
+				7E7617FC19049C990051E6A1 /* login-button-small-pressed@2x.png */,
+				7E7617FD19049C990051E6A1 /* login-button-small.png */,
+				7E7617FE19049C990051E6A1 /* login-button-small@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		7E7618191904B0080051E6A1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7E76181A1904B0200051E6A1 /* JNAppManager.h */,
+				7E76181B1904B0200051E6A1 /* JNAppManager.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7E76181D1904B0370051E6A1 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				7E76181E1904B0370051E6A1 /* baseViewController */,
+				7E76182B1904D0CD0051E6A1 /* JNEachRoundViewController.h */,
+				7E76182C1904D0CD0051E6A1 /* JNEachRoundViewController.m */,
+				7E76182D1904D0CD0051E6A1 /* JNEachRoundViewController.xib */,
+				7E76182E1904D0CD0051E6A1 /* JNLoginViewController.h */,
+				7E76182F1904D0CD0051E6A1 /* JNLoginViewController.m */,
+				7E7618301904D0CD0051E6A1 /* JNLoginViewController.xib */,
+				7E7618311904D0CD0051E6A1 /* JNMainMenuViewController.h */,
+				7E7618321904D0CD0051E6A1 /* JNMainMenuViewController.m */,
+				7E7618331904D0CD0051E6A1 /* JNMainMenuViewController.xib */,
+				7E76183F1904D17C0051E6A1 /* JNSummaryViewController.h */,
+				7E7618401904D17C0051E6A1 /* JNSummaryViewController.m */,
+				7E7618411904D17C0051E6A1 /* JNSummaryViewController.xib */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		7E76181E1904B0370051E6A1 /* baseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E76181F1904B0370051E6A1 /* JNBaseViewController.h */,
+				7E7618201904B0370051E6A1 /* JNBaseViewController.m */,
+			);
+			path = baseViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E175299190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGist" */;
 			buildPhases = (
+				185694D8104740EA92961F9B /* Check Pods Manifest.lock */,
 				7E175263190486D00082A1B3 /* Sources */,
 				7E175264190486D00082A1B3 /* Frameworks */,
 				7E175265190486D00082A1B3 /* Resources */,
+				9A767717A4FC4E1EBAADD90C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,7 +329,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E76183A1904D0CD0051E6A1 /* JNLoginViewController.xib in Resources */,
+				7E76180119049C990051E6A1 /* login-button-small.png in Resources */,
+				7E7618381904D0CD0051E6A1 /* JNEachRoundViewController.xib in Resources */,
 				7E175283190486D00082A1B3 /* Images.xcassets in Resources */,
+				7E76180219049C990051E6A1 /* login-button-small@2x.png in Resources */,
+				7E7617FF19049C990051E6A1 /* login-button-small-pressed.png in Resources */,
+				7E7618431904D17C0051E6A1 /* JNSummaryViewController.xib in Resources */,
+				7E76182A1904C7DF0051E6A1 /* portrait_placeholder.png in Resources */,
+				7E76180019049C990051E6A1 /* login-button-small-pressed@2x.png in Resources */,
+				7E76183C1904D0CD0051E6A1 /* JNMainMenuViewController.xib in Resources */,
 				7E175275190486D00082A1B3 /* InfoPlist.strings in Resources */,
 				7E17527E190486D00082A1B3 /* Main.storyboard in Resources */,
 			);
@@ -245,14 +354,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		185694D8104740EA92961F9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A767717A4FC4E1EBAADD90C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E175263190486D00082A1B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7618371904D0CD0051E6A1 /* JNEachRoundViewController.m in Sources */,
+				7E76181C1904B0200051E6A1 /* JNAppManager.m in Sources */,
+				7E7618421904D17C0051E6A1 /* JNSummaryViewController.m in Sources */,
 				7E17527B190486D00082A1B3 /* JNAppDelegate.m in Sources */,
-				7E175281190486D00082A1B3 /* JNViewController.m in Sources */,
+				7E7618211904B0370051E6A1 /* JNBaseViewController.m in Sources */,
 				7E175277190486D00082A1B3 /* main.m in Sources */,
+				7E76183B1904D0CD0051E6A1 /* JNMainMenuViewController.m in Sources */,
+				7E7618391904D0CD0051E6A1 /* JNLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +521,7 @@
 		};
 		7E17529A190486D00082A1B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C4DDDBB86A4462AD23F6FF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +535,7 @@
 		};
 		7E17529B190486D00082A1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C4DDDBB86A4462AD23F6FF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +606,7 @@
 				7E17529B190486D00082A1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E17529C190486D00082A1B3 /* Build configuration list for PBXNativeTarget "WashioGistTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +615,7 @@
 				7E17529E190486D00082A1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

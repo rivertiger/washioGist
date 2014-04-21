@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "JNAppManager.h"
+
 @interface JNAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) JNAppManager *appManager;
 @end

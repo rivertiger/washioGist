@@ -1,5 +1,5 @@
 //
-//  JNViewController.h
+//  JNLoginViewController.h
 //  WashioGist
 //
 //  Created by jamesn on 4/20/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JNViewController : UIViewController
+#import "JNBaseViewController.h"
+
+@interface JNLoginViewController : JNBaseViewController
 
 @end

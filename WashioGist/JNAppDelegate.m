@@ -5,17 +5,73 @@
 //  Created by jamesn on 4/20/14.
 //  Copyright (c) 2014 Washio. All rights reserved.
 //
-
+#import <Parse/Parse.h>
+#import <FacebookSDK/FacebookSDK.h>
 #import "JNAppDelegate.h"
+#import "JNLoginViewController.h"
 
 @implementation JNAppDelegate
+@synthesize appManager = _appManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    JNMainViewController *mainVC = [[JNMainViewController alloc] init];
+//    self.window.rootViewController = mainVC;
+//    
+//    [self.window makeKeyAndVisible];
+    
+    // ****************************************************************************
+    // Fill in with your Parse credentials:
+    // ****************************************************************************
+    [Parse setApplicationId:@"tgonk5XeBc4bCYylgBk2YUqPlwcamn5me4qlIatN"
+                  clientKey:@"ub9AdnJQx17xjL7b8VLdLv5pmzV9mbOSgEE2xujH"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // ****************************************************************************
+    // Your Facebook application id is configured in Info.plist.
+    // ****************************************************************************
+    [PFFacebookUtils initializeFacebook];
+    
+    _appManager = [[JNAppManager alloc] init];
+    
+    // Override point for customization after application launch.
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[JNLoginViewController alloc] initWithNibName:@"JNLoginViewController" bundle:nil]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
     return YES;
 }
-							
+
+// ****************************************************************************
+// App switching methods to support Facebook Single Sign-On.
+// ****************************************************************************
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    /*
+     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+     */
+    
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    /*
+     Called when the application is about to terminate.
+     Save data if appropriate.
+     See also applicationDidEnterBackground:.
+     */
+    [[PFFacebookUtils session] close];
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -33,14 +89,6 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 @end

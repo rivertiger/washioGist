@@ -10,8 +10,12 @@
 
 #import "JNAppManager.h"
 
-@interface JNAppDelegate : UIResponder <UIApplicationDelegate>
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public interface
 
+
+@interface JNAppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) JNAppManager *appManager;
 @end

@@ -10,19 +10,24 @@
 #import "JNAppDelegate.h"
 #import "JNLoginViewController.h"
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmenetation
+
+
 @implementation JNAppDelegate
 @synthesize appManager = _appManager;
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark delegate methods
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    
-//    JNMainViewController *mainVC = [[JNMainViewController alloc] init];
-//    self.window.rootViewController = mainVC;
-//    
-//    [self.window makeKeyAndVisible];
-    
+
     // ****************************************************************************
     // Fill in with your Parse credentials:
     // ****************************************************************************

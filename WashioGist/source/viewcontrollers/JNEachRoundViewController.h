@@ -10,8 +10,15 @@
 
 #import "JNBaseViewController.h"
 
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public Interface
+
+
 @interface JNEachRoundViewController : JNBaseViewController <UITextFieldDelegate>
 @property (nonatomic, strong) NSDictionary *userBeingTested;
 @property (nonatomic, strong) UIImage *imageFromUser;
 @property (nonatomic, weak) IBOutlet UIImageView *faceImageView;
+
+
 @end

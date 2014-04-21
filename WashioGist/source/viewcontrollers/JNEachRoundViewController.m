@@ -11,12 +11,24 @@
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import "JNSummaryViewController.h"
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Interface
+
+
 @interface JNEachRoundViewController ()
 @property (nonatomic, weak) IBOutlet UILabel *fnameLabel;
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 @property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
 @property (nonatomic, weak) IBOutlet UILabel *resultLabel;
 @end
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmentation
+
 
 @implementation JNEachRoundViewController
 @synthesize faceImageView = _faceImageView;

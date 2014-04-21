@@ -8,6 +8,13 @@
 
 #import "JNBaseViewController.h"
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public Interface
+
+
 @interface JNSummaryViewController : JNBaseViewController
+
 
 @end

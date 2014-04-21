@@ -9,11 +9,22 @@
 #import "JNAppManager.h"
 
 
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implementation
+
 
 @implementation JNAppManager
 @synthesize currentScore = _currentScore;
 @synthesize facebookFriends = _facebookFriends;
 @synthesize randomizedFriendSample = _randomizedFriendSample;
+
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark NSObject Overrides
+
 
 - (id)init {
     if (self = [super init]) {
@@ -25,6 +36,10 @@
     }
     return self;
 }
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public Methods
 
 
 - (int)getCurrentRound {
@@ -48,6 +63,31 @@
     
 }
 
+- (NSDictionary<FBGraphUser>* )getRandomFriend {
+    //        for (NSDictionary<FBGraphUser>* friend in friends) {
+    //            NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
+    //        }
+    if ([_randomizedFriendSample count] == 0) {
+        return nil;
+    }
+    NSDictionary<FBGraphUser>* aUser = [_randomizedFriendSample objectAtIndex: arc4random() % [_randomizedFriendSample count]];
+    return aUser;
+}
+
+
+- (void)resetCurrentScore {
+    _currentScore = 0;
+}
+
+- (void)incrementScore {
+    _currentScore++;
+}
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Methods
+
+
 - (void)shuffle
 {
     NSUInteger count = [_randomizedFriendSample count];
@@ -61,26 +101,6 @@
     NSLog(@"_randomizedSample is:%@", _randomizedFriendSample);
 }
 
-- (NSDictionary<FBGraphUser>* )getRandomFriend {
-    //        for (NSDictionary<FBGraphUser>* friend in friends) {
-    //            NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
-    //        }
-    if ([_randomizedFriendSample count] == 0) {
-        return nil;
-    }
-    NSDictionary<FBGraphUser>* aUser = [_randomizedFriendSample objectAtIndex: arc4random() % [_randomizedFriendSample count]];
-    return aUser;
-}
 
-- (void)resetCurrentScore {
-    _currentScore = 0;
-}
 
-- (void)incrementScore {
-    _currentScore++;
-}
-
-- (void)decrementScore {
-    _currentScore--;
-}
 @end

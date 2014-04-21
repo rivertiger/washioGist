@@ -10,9 +10,20 @@
 
 #import "JNMainMenuViewController.h"
 
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Interface
+
+
 @interface JNSummaryViewController ()
 @property (nonatomic, weak) IBOutlet UILabel *totalScoreLabel;
 @end
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmentation
+
 
 @implementation JNSummaryViewController
 @synthesize totalScoreLabel = _totalScoreLabel;

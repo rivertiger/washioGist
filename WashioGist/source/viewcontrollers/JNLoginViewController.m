@@ -14,9 +14,19 @@
 #import <Parse/Parse.h>
 
 
-@interface JNLoginViewController ()
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Interface
 
+
+@interface JNLoginViewController ()
 @end
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmentation
+
 
 @implementation JNLoginViewController
 
@@ -32,11 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Check if user is cached and linked to Facebook, if so, bypass login
-//    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
-//        [self.navigationController pushViewController:[[JNMainViewController alloc] initWithNibName:@"JNMainViewController" bundle:nil] animated:NO];
-//    }
 }
 
 
@@ -57,23 +62,20 @@
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error" message:@"Uh oh. The user cancelled the Facebook login." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
                 [alert show];
+                 [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
             } else {
                 NSLog(@"Uh oh. An error occurred: %@", error);
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error" message:[error description] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
                 [alert show];
+                [MBProgressHUD hideAllHUDsForView:weakSelf.view animated:YES];
             }
         } else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
-//            JNMainMenuViewController *mainVC = [[JNMainMenuViewController alloc] initWithNibName:@"JNMainMenuViewController" bundle:nil];
-//           [self.navigationController pushViewController:mainVC animated:YES];
-//            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+
             [weakSelf getFBUserInfo];
 
         } else {
             NSLog(@"User with facebook logged in!");
-//            JNMainMenuViewController *mainVC = [[JNMainMenuViewController alloc] initWithNibName:@"JNMainMenuViewController" bundle:nil];
-//            [self.navigationController pushViewController:mainVC animated:YES];
-//            [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
             [weakSelf getFBUserInfo];
         }
     }];
@@ -138,7 +140,6 @@
                 }
             }];
             
-            //[self updateProfile];
             [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         } else if ([[[[error userInfo] objectForKey:@"error"] objectForKey:@"type"]
                     isEqualToString: @"OAuthException"]) { // Since the request failed, we can check if it was due to an invalid session

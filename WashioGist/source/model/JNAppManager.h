@@ -10,11 +10,22 @@
 
 #import <Facebook-iOS-SDK/FacebookSDK/FBGraphUser.h>
 
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public interface
+
+
 @interface JNAppManager : NSObject 
 @property (nonatomic, assign) int currentScore;
 @property (nonatomic, assign) int currentRound;
 @property (nonatomic, strong, readonly) NSArray *facebookFriends;
 @property (nonatomic, strong, readonly) NSMutableArray *randomizedFriendSample;
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Public Methods
+
 
 - (int)getCurrentRound;
 - (void)incrementCurrentRound;

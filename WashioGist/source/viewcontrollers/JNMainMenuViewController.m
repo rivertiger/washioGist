@@ -13,12 +13,24 @@
 #import "JNEachRoundViewController.h"
 #import <AFNetworking/AFNetworking.h>
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Interface
+
+
 @interface JNMainMenuViewController ()
 @property (nonatomic, weak) IBOutlet UIButton *playGameButton;
 @property (nonatomic, weak) IBOutlet UIImageView *faceImageView;
 @property (nonatomic, weak) IBOutlet UILabel *currentScoreLabel;
 @property (nonatomic, weak) IBOutlet UILabel *fbNameLabel;
 @end
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmentation
+
 
 @implementation JNMainMenuViewController
 @synthesize playGameButton = _playGameButton;
@@ -87,20 +99,10 @@
         [weakSelf.appManager assignFacebookFriends:friends];
         JNEachRoundViewController *eachRoundVC = [[JNEachRoundViewController alloc] initWithNibName:@"JNEachRoundViewController" bundle:nil];
         eachRoundVC.userBeingTested = (NSDictionary *)[self.appManager getRandomFriend];
-//facebook picture profile
-//        https://graph.facebook.com/[profile_id]/picture
-
         [weakSelf.navigationController pushViewController:eachRoundVC animated:YES];
-        // 1
-
     }];
 }
 
-
-//NSLog(@"Found: %i friends", friends.count);
-//        for (NSDictionary<FBGraphUser>* friend in friends) {
-//            NSLog(@"I have a friend named %@ with id %@", friend.name, friend.id);
-//        }
 
 
 

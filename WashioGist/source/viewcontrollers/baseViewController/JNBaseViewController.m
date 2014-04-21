@@ -11,9 +11,21 @@
 #import "JNAppManager.h"
 #import "JNAppDelegate.h"
 
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Private Interface
+
+
 @interface JNBaseViewController ()
 @property (weak, nonatomic) JNAppManager *appManager;
 @end
+
+
+// *************************************************************************************************
+#pragma mark -
+#pragma mark Implmentation
+
 
 @implementation JNBaseViewController
 @synthesize appManager = _appManager;
